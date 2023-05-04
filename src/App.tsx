@@ -15,15 +15,15 @@ export default function App() {
   // The main React component
   return (
     <div style={{ width: '100%', height: '100%', background: '#253237' }}>
-       {/* A Parallax component with three pages */}
+      {/* A Parallax component with three pages */}
       <Parallax ref={parallax} pages={3}>
-         {/* A dark purple layer that covers the second page */}
+        {/* A dark purple layer that covers the second page */}
         <ParallaxLayer offset={1} speed={1} style={{ backgroundColor: '#805E73' }} />
-          {/* A light blue layer that covers the third page */}
+        {/* A light blue layer that covers the third page */}
         <ParallaxLayer offset={2} speed={1} style={{ backgroundColor: '#87BCDE' }} />
 
         {/* To use the stars in the complete background of the website */}
-         {/* A layer that shows a starry background */}
+        {/* A layer that shows a starry background */}
         <ParallaxLayer
           offset={0}
           speed={0}
@@ -36,6 +36,8 @@ export default function App() {
         {/* An image of a satellite that moves across the page */}
         <ParallaxLayer offset={1.3} speed={-0.3} style={{ pointerEvents: 'none' }}>
           <img src={url('satellite4')} style={{ width: '15%', marginLeft: '70%' }} />
+
+          {/* <h1>Hello There ! </h1> */}
         </ParallaxLayer>
 
         {/* A few clouds that move across the page */}
@@ -81,7 +83,7 @@ export default function App() {
           }}>
           <img src={url('earth')} style={{ width: '60%' }} />
         </ParallaxLayer>
-        
+
         {/* An image of a Clients-Screen that moves across the page (upwards)*/}
         <ParallaxLayer
           offset={2}
@@ -103,7 +105,16 @@ export default function App() {
             alignItems: 'center',
             justifyContent: 'center',
           }}>
-          <img src={url('server')} style={{ width: '20%' }} />
+          {/* <img src={url('server')} style={{ width: '20%' }} /> */}
+          <h1
+            style={{
+              textAlign: 'center',
+              color: 'SkyBlue',
+              fontSize: '6rem',
+              fontWeight: 'bold',
+            }}>
+            Hello there !
+          </h1>
         </ParallaxLayer>
 
         {/* An image of a Black-Bash that moves across the page (upwards)*/}
